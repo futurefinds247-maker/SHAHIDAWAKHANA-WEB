@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHAHI DAWAKHANA</title>
+  <meta name="description" content="Showcase of herbal products for health and wellness." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; font-family: Inter, sans-serif;
+      background: #f5f9f6; color: #222;
+    }
+    header {
+      background: #2d4739; color: #fff; padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 50;
+    }
+    header .logo { font-size: 1.4rem; font-weight: 700; }
+    nav a { color: #fff; margin-left: 1.2rem; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      text-align: center; padding: 80px 20px;
+      background: linear-gradient(135deg, #c2eaba, #e6f4ea);
+    }
+    .hero h1 { font-size: 2.5rem; margin: 0 0 1rem; color: #2d4739; }
+    .hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto; color: #333; }
+
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #2d4739; text-align: center; }
+    .sub { color: #555; text-align: center; max-width: 700px; margin: 0 auto 2rem; }
+
+    .products {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      display: flex; flex-direction: column;
+    }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
+    .card-body { padding: 16px; }
+    .card h3 { margin: 0 0 .5rem; font-size: 1.2rem; color: #2d4739; }
+    .card p { font-size: .95rem; color: #555; margin-bottom: .8rem; }
+    .price { font-weight: 600; color: #388e3c; margin-bottom: .6rem; }
+
+    .reviews {
+      margin-top: 2rem;
+    }
+    .review {
+      background: #fff; padding: 1rem; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1rem;
+    }
+    .review strong { color: #2d4739; }
+    form {
+      display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 2rem auto;
+    }
+    form input, form textarea {
+      padding: 10px; border: 1px solid #ccc; border-radius: 8px;
+      font-family: inherit; font-size: 1rem;
+    }
+    form button {
+      padding: 12px; background: #2d4739; color: #fff;
+      border: none; border-radius: 8px; cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover { background: #388e3c; }
+
+    footer {
+      background: #2d4739; color: #fff; text-align: center; padding: 20px; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 SHAHI DAWAKHANA</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Natural Herbal Products for Better Health</h1>
+    <p>Explore our catalog of herbal solutions designed to improve your well-being naturally. Replace these placeholders with your actual products.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <p class="sub">Here’s a sample product showcase layout. Swap the images, names, and descriptions with your real products.</p>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220?text=Product+1" alt="Product 1">
+        <div class="card-body">
+          <h3>Herbal Tea Mix</h3>
+          <p>Boost your immunity with a blend of natural herbs and antioxidants.</p>
+          <div class="price">₹499</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220?text=Product+2" alt="Product 2">
+        <div class="card-body">
+          <h3>Ayurvedic Capsules</h3>
+          <p>Support your digestive system with traditional herbal formulations.</p>
+          <div class="price">₹799</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220?text=Product+3" alt="Product 3">
+        <div class="card-body">
+          <h3>Skin Care Oil</h3>
+          <p>Rejuvenate your skin naturally with our herbal oil blend.</p>
+          <div class="price">₹999</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p class="sub">See what our happy customers say and leave your own review.</p>
+    <div class="reviews" id="reviews-list">
+      <div class="review"><strong>Asha:</strong> The herbal tea really helped boost my energy levels!</div>
+      <div class="review"><strong>Ravi:</strong> Loved the skin care oil, my skin feels fresh and smooth.</div>
+    </div>
+
+    <form id="review-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="message" rows="4" placeholder="Write your review..." required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="sub">We are dedicated to promoting health and wellness through safe, effective, and natural herbal products. Replace this text with your brand story.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="sub">Have questions or want to know more? Reach us at <strong>shahidawakhanaassam@gmail.com</strong>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> SHAHI DAWAKHANA. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('review-form');
+    const reviewsList = document.getElementById('reviews-list');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(name && message) {
+        const div = document.createElement('div');
+        div.className = 'review';
+        div.innerHTML = `<strong>${name}:</strong> ${message}`;
+        reviewsList.appendChild(div);
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>
